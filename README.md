@@ -4,13 +4,13 @@ Implementation of Perlin noise algorithm
 # Results this code
 ### Smooth random noise
 <p align="center">
-  <img src="http://i.imgur.com/lfNMzHe.jpg" alt="smooth"/>
+  <img src="http://i.imgur.com/7fJsYQc.jpg" alt="smooth"/>
 </p>
 ### Random noise
 <p align="center">
-  <img src="http://i.imgur.com/HIF7V4J.jpg" alt="random"/>
+  <img src="http://i.imgur.com/pElHMW6.jpg" alt="random"/>
 </p>
 ### Perlin noise
 <p align="center">
-  <img src="http://i.imgur.com/SAvVs3r.jpg" alt="perlin"/>
+  <img src="http://i.imgur.com/cd6Gfvx.jpg" alt="perlin"/>
 </p>
