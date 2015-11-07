@@ -18,11 +18,11 @@ public class Main {
 	 * @throws IOException
 	 */
 	public static void main(String[] args) throws IOException {
-		float[][] noise = PerlinNoiseGenerator.whiteNoise(200, 200, ThreadLocalRandom.current().nextLong());
+		float[][] noise = PerlinNoiseGenerator.whiteNoise(800, 800, ThreadLocalRandom.current().nextLong());
 		ImageIO.write(heightMapToImage(noise), "jpg", new File("noise.jpg"));
-		float[][] smooth = PerlinNoiseGenerator.smoothNoise(noise, 5);
+		float[][] smooth = PerlinNoiseGenerator.smoothNoise(noise, 0);
 		ImageIO.write(heightMapToImage(smooth), "jpg", new File("smooth.jpg"));
-		float[][] perlin = PerlinNoiseGenerator.perlinNoise(noise, 5, 2F);
+		float[][] perlin = PerlinNoiseGenerator.perlinNoise(noise, 15, 0.962F);
 		ImageIO.write(heightMapToImage(perlin), "jpg", new File("perlin.jpg"));
 	}
 	
@@ -36,6 +36,16 @@ public class Main {
 		for(int x = 0; x < heightmap.length; x++){
 			for(int y = 0; y < heightmap[0].length; y++){
 				float color = heightmap[x][y];
+//				Color pixelColor = null;
+//				if(color < 0.25){
+//					pixelColor = Color.CYAN;
+//				} else if(color < 0.50){
+//					pixelColor = Color.BLUE;
+//				} else if(color < 0.75){
+//					pixelColor = Color.YELLOW;
+//				} else {
+//					pixelColor = Color.green;
+//				}
 				image.setRGB(x, y, new Color(color, color, color).getRGB());
 			}
 		}
