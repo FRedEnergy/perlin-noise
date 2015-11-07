@@ -12,5 +12,5 @@ Implementation of Perlin noise algorithm
 </p>
 ### Perlin noise
 <p align="center">
-  <img src="http://i.imgur.com/cd6Gfvx.jpg" alt="perlin"/>
+  <img src="http://i.imgur.com/4F1MeL4.jpg" alt="perlin"/>
 </p>
